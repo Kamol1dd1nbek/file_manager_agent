@@ -2,7 +2,11 @@
   "name": "file_manager_agent",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
+  "exports": {
+    "./functions": "./functions/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
