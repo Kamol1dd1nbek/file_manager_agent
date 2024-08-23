@@ -3,11 +3,12 @@
 import * as http from "http";
 
 import { getFolderData } from "./functions/index.js";
+import getHome from "./functions/getHome.js";
 
 
 const server = http.createServer((req, res) => {
     if (req.url === "/home") {
-        const data = getFolderData("C:\\Users\\Kamoliddin\\Desktop");
+        const data = getHome();
 
         res.end(JSON.stringify(data))
     } else {
